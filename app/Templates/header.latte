@@ -1,16 +1,32 @@
-<header class="bg-white shadow-md">
-    <div class="max-w-5xl mx-auto px-4 py-4">
+<header class="">
+    <div class="px-4 py-4">
         <div class="flex justify-between items-center">
             <div class="text-lg font-bold">
-                <a href="{$basePath}" class="text-black">Skeleton Web</a>
+                <a href="#" class="text-black">Dribbble</a>
             </div>
             <nav>
-                <ul class="flex space-x-4">
-                    <li><a href="#" class="text-black hover:text-gray-700">Home</a></li>
-                    <li><a href="#" class="text-black hover:text-gray-700">About</a></li>
-                    <li><a href="#" class="text-black hover:text-gray-700">Contact</a></li>
+                <ul class="flex items-center space-x-6">
+                    <li class="relative group">
+                        <a href="#" class="flex items-center space-x-1 text-gray-700">Find Designers
+                            <svg class="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </a>
+                        <ul class="absolute left-0 hidden mt-2 space-y-2 bg-white border border-gray-200 rounded-lg shadow-lg group-hover:block">
+                            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Option 1</a></li>
+                            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Option 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="">Inspiration</a></li>
+                    <li><a href="#" class="">Jobs</a></li>
+                    <li><a href="#" class="">Go Pro</a></li>
                 </ul>
             </nav>
+            <div class="hidden lg:flex items-center space-x-4">
+                <input type="text" placeholder="Search..."class="px-5 py-3 border-white rounded-full">
+                <a href="#" class="px-5 py-3 text-black bg-none rounded-full hover:text-gray-800">Log In</a>
+                <a href="#" class="px-5 py-3 text-white bg-black rounded-full hover:bg-gray-800">Sign Up</a>
+            </div>
         </div>
     </div>
 </header>
