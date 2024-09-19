@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@keyframes backgroundChange {
+    0% { background-color: #f59e0b; } /* Amber */
+    25% { background-color: #fbbf24; } /* Yellow */
+    50% { background-color: #fef08a; } /* Light Yellow */
+    75% { background-color: #eab308; } /* Darker Amber */
+    100% { background-color: #f59e0b; } /* Amber */
+}
+
+.animate-background {
+    animation: backgroundChange 5s infinite;
+}
