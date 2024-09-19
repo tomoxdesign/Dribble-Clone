@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="text">
+    <meta name="keywords" content="text">
+    
+    {block title}
+        <title>Skeleton web</title>
+    {/block}
+
+    {block styles}
+        <link href="{$basePath}/css/tailwind.css" rel="stylesheet">
+    {/block}
+</head>
+<body class="font-sans bg-white text-black">
+    {include 'header.latte'}
+
+    <main>
+        {block content}
+        {/block}
+    </main>
+
+    {include 'footer.latte'}
+
+    {block scripts}
+        {* Vložit JavaScript soubory, pokud je potřeba *}
+    {/block}
+</body>
+</html>
